@@ -27,7 +27,7 @@ const Pricelist = () => {
     useEffect(() => {
         setLoading(true);
         const fetchData = async () => {
-            const response = await fetch("http://localhost:5000/products", {
+            const response = await fetch("https://backend-price-list.onrender.com/products", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -54,7 +54,7 @@ const Pricelist = () => {
     const updateField = async (id, updatedData) => {
         setUpdate({loading : false,update : false});
         try {
-            const response = await fetch(`http://localhost:5000/products/${id}`, {
+            const response = await fetch(`https://backend-price-list.onrender.com/products/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

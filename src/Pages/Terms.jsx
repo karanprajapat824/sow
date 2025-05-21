@@ -3,7 +3,7 @@ import './../Css/Terms.css';
 import { GiHamburgerMenu } from "react-icons/gi"; 
 import { IoCloseSharp } from "react-icons/io5";
 
-// Inline translation objects
+
 const eg = {
   home: "Home",
   order: "Order",
@@ -38,7 +38,7 @@ const Terms = () => {
 
   useEffect(() => {
     const fetchTerms = async () => {
-      const response = await fetch(`http://localhost:5000/terms/${lang}`, {
+      const response = await fetch(`https://backend-price-list.onrender.com/terms/${lang}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json"
