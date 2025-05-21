@@ -22,3 +22,77 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+let me healp to write readme file 
+i provide you comple package.json file for both frontend and backend 
+and 
+also explain each and every feature of both pages 
+
+{
+  "name": "price_list",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.6.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "vite": "^6.3.5"
+  }
+}
+
+
+
+{
+  "name": "backend_price_list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "dotenv": "^16.5.0",
+    "fastify": "^5.3.3",
+    "pg": "^8.16.0",
+    "sequelize": "^6.37.7"
+  }
+}
+
+
+first page is price_list page page is completaly responsive and fully working 
+
+the page conatins a sidebar which are control by ham burger sign on small dives and each divice show necessary information first for exapmle for big divice all information will show but not for small device 
+
+live demo 1st page : https://sow1.vercel.app/
+
+and second page id terms page that also support language suffer and the data and complety responsive 
+
+live demo 2nd page : 
+
