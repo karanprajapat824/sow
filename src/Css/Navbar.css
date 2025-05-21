@@ -1,0 +1,68 @@
+.navbar{
+    height: 14vh;
+    background-color: #2486e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6em;
+    color: white;
+}
+
+.profile,.language{
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.profile-icon{
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+}
+
+.profile-icon > *{
+    font-size: 5em;
+}
+
+.profile-info{
+    color : white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+}
+
+.profile-info div:first-child {
+    font-size: 1.2em;
+}
+
+.profile-info div:nth-child(2){
+    font-size: 0.9em;
+}
+
+.language img{
+    width: 2.5em;
+    border-radius: 0.3em;
+}
+
+.hamburgermenu{
+    font-size: 2em;
+    display: none;
+}
+
+@media screen and (max-width : 995px)
+{
+    .hamburgermenu{
+        display: block;
+    }
+    .navbar{
+        height: 12vh;
+        padding: 0 4em;
+    }
+}

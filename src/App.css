@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mobile-only{
+  display: none;
+}
+
+@media screen and (min-width : 768px) and (max-width : 995px)
+{
+    .desktop-only{
+      display: none;
+    }
+    .mobile-only{
+      display: flex;
+    }   
+}
+
+@media (max-width : 767px)
+{
+  .desktop-only{
+    display: none;
+  }
+  .mobile-only{
+    display: flex;
+  }
+}

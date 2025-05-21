@@ -1,0 +1,31 @@
+.popup{
+    border: 2px solid black;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    height: 5em;
+    width: 15em;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fail,.pass{
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    gap: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.pass{
+    background-color: rgb(20, 231, 20);
+    color: white;
+}

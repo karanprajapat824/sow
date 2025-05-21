@@ -1,0 +1,248 @@
+.pricelist-body{
+    min-height: 70vh;
+    display: flex;
+}
+
+.pricelist-container{
+    width: 84%;
+}
+
+.search-button-container{
+    height: 20vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4em;
+}
+
+.search-body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.search-body div{
+    overflow: hidden;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    border-radius: 1vh;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.search-body input{
+    border: none;
+    box-sizing: border-box;
+    padding: 0.6em;
+    height: 5vh;
+    border-radius: 1vh;
+    width: 20vw;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;    
+}
+
+.no-data{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 600;    
+}
+
+.search-body button{
+    width: 5vw;
+    height: 5vh;
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    overflow: hidden;
+    font-size: 1.5em;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.search-button-icon{
+    box-sizing: border-box;
+    color: #187ee1;
+}
+
+.search-body input:focus{
+    border: none;
+    outline: none;
+}
+
+.pricelist-buttons{
+    height: 100%;
+    padding-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    box-sizing: border-box;
+    gap: 2vw;
+}
+
+.pricelist-buttons button{
+    min-width: 20%;
+    padding: 0.8em;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+    box-sizing: border-box;
+}
+
+.pricelist-header-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    font-size: 0.8em;
+    height: 5vh;
+}
+
+
+.pricelist-header-container div{
+    padding-left: 0.2em;
+}
+
+.article-number,.in-stock{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.Product-service,.description{
+    width: 25%;
+}
+
+.in-price,.price{
+    width : 10%;
+}
+
+.unit{
+    width: 15%;
+}
+
+
+.pricelist-content{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content-border{
+    border: 1px solid #187ee1;
+    padding: 0.2em 0.5em;
+    border-radius: 1.5vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: auto;
+}
+
+.dot{
+    border: none;
+    font-size: x-large;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    padding-bottom: 0.7em;
+    color: #187ee1;
+    width: 5%;
+}
+
+.arraw{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    padding-left: 1em;
+    color: #187ee1;
+}
+
+@media screen and (min-width : 768px) and (max-width : 995px){
+    .pricelist-container{
+        width: 100%;
+    }
+    .in-price{
+        display: none;
+    }
+    .article-number{
+        width: 15%;
+    }
+}
+
+@media screen and (max-width : 767px)
+{
+    .pricelist-container{
+        width: 100%;
+    }
+    .pricelist-buttons div{
+        display: none;
+    }
+    .pricelist-buttons{
+        width: 100%;
+        justify-content: space-around;
+        margin: 1em 0;
+    }
+    .pricelist-buttons button{
+        border-radius: 5vw;
+    }
+    .search-button-container{
+        flex-direction: column;
+        height: fit-content;
+        padding: 1em 0;
+    }
+    .search-body{
+        width: 90%;
+    }
+    .search-body div{
+        width: 100%;
+        height: 7vh;
+        border-radius: 5vw;
+        overflow: hidden;
+    }
+    .search-body input{
+        width: 90%;
+        margin: 1em;
+        padding: 1em;
+    }
+    .search-body input::placeholder{
+        font-size: 1.3em;
+    }
+    .search-body button{
+        width: 10%;
+    }
+    .article-number{
+        display: none;
+    }
+    .unit{
+        display: none;
+    }
+    .in-stock{
+        display: none;
+    }
+    .Product-service{
+        width: 60%;
+    }
+    .price{
+        width: 20%;
+    }
+    .pricelist-header-container input{
+        height: 4vh;
+        border-radius: 5vw;
+    }
+}
