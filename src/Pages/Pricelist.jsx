@@ -8,7 +8,7 @@ import { FcPrint, FcPieChart } from "react-icons/fc";
 import { FaArrowDown } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useState, useEffect } from "react";
-import Popup from "../Components/popup";
+import Popup from "../Components/Popup";
 
 const Pricelist = () => {
     const [sidebar, setSidebar] = useState(false);
