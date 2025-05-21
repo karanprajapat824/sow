@@ -241,8 +241,12 @@
     .price{
         width: 20%;
     }
+    .pricelist-header-container{
+        margin-top: 1em;
+    }
     .pricelist-header-container input{
         height: 4vh;
         border-radius: 5vw;
     }
+    
 }
